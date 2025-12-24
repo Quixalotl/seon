@@ -1,0 +1,48 @@
+body {
+    background-color: rgb(49, 49, 68);
+    color: beige;
+    display: flex;
+}
+
+.card {
+    background-color: beige;
+    color: black;
+}
+
+.column-1 {
+    display: flex;
+    flex-basis: 400px;
+}
+
+.core {
+
+}
+
+.column-2 {
+    display: flex;
+    flex-basis: 800px;
+}
+
+.column-3 {
+    display: flex;
+    flex-basis: 300px;
+}
+
+
+/* <div class="column-1">
+        <div class="core"></div>
+        <div class="resources"></div>
+        <div class="basic-moves"></div>
+        <div class="pain"></div>
+        <div class="knowledge"></div>
+        <div class="equipment"></div>
+    </div>
+    <div class="column-2"></div>
+        <div class="stats"></div>
+        <div class="core-traits"></div>
+        <div class="quirks"></div>
+        <div class="kit"></div>
+        <div class="traits"></div>
+        <div class="advanced-moves"></div>
+    <div class="column-3"></div>
+        <div class="reminders"></div> */
