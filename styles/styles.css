@@ -1,128 +1,141 @@
 body {
-    background-color: rgb(49, 49, 68);
+    background: #cc2983;
+    background: linear-gradient(135deg, rgb(131, 25, 83) 0%, rgb(114, 30, 159) 14%, rgb(56, 72, 139) 27%, rgb(23, 137, 141) 40%, rgb(69, 133, 95) 53%, rgba(104, 163, 130, 1) 69%, rgb(158, 104, 18) 84%, rgb(141, 61, 69) 100%);
     color: beige;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .card {
     background-color: beige;
     color: black;
+    font-family: 'McLaren';
     display: flex;
     justify-content: center;
     padding: 10px;
     margin: 8px;
     border-radius: 8px;
-    flex-grow: 1;
-    flex-shrink: 1
+    border: 5px inset rgb(169, 156, 133);
 }
 
 .column-1 {
-    display: 4 4 300px;
+    display: flex;
+    /* flex: 4 4 300px; */
     flex-direction: column;
     flex-grow: 4;
     margin-right: 15px;
 }
 
 .c1r1 {
-    display: flex
+    display: flex;
 }
 
 .c1r2 {
-    display: flex 4 4 300px;
-    justify-content: center;
-    background: blueviolet;
-    padding: 20px;
-    flex-direction: column;
+    display: flex;
 }
 
 .c1r2s1 {
-    display: flex;
-    background: red;
+    display: flex;   
+    flex: 4 4 300px;
+    
 }
 
 .c1r2s2 {
     display: flex;
+    flex: 4 4 300px;
     flex-direction: column;
-    background: green
 }
 .c1r3 {
-    display: flex 
+    display: flex;
 }
 
 .core {
-    display: flex 4 4 300px;
+    display: flex;
+    flex: 4 4 300px;
     height: 150px;
 }
 
 .basic-moves {
-    display: flex 4 4 200px;
+    display: flex;
+    flex: 4 4 200px;
     height: auto;
 }
 
 .resources {
-    display: flex 4 4 100px;
+    display: flex;
+    flex: 2 2 100px;
     height: 120px;
 }
 
 .pain {
-    display: flex 4 4 100px;
+    display: flex;
+    flex: 2 2 100px;
     height: 50px;
 }
 
 .resistances {
-    display: flex 4 4 100px; 
+    display: flex;
+    flex: 2 2 100px; 
     height: 200px;
 }
 
 .knowledge {
-    display: flex 4 4 100px; 
+    display: flex;
+    flex: 2 2 100px; 
     height: 200px;
 }
 
 .equipment {
-    display: flex 4 4 300px;
+    display: flex;
+    flex: 4 4 300px;
     height: 500px;
 }
 
 .column-2 {
-    display: flex 7 7 800px;
+    display: flex;
+    flex: 7 7 400px;
     flex-direction: column;
     flex-grow: 7;
 }
 
 .c2r1 {
     display: flex;
-    justify-content: center;
 }
 
 .c2r1s1 {
     display: flex;
+    flex: 3 3 700px;
     flex-direction: column;
+    /* width: 500px; */
 }
 
-.c2r1s1split {
+.c2r1s1s1 {
     display: flex;
-    height: 600px
+    flex: 3 3 400px;
+    flex-direction: row;
 }
 
 .stats {
-    width: 500px;
-    height: 150px;
+    display: flex;
+    flex: 3 3 150px;
 }
 
 .kit {
-    flex-basis: 300px;
-    height: auto;
+    display: flex;
+    flex: 7 7 300px;
+    min-width: 100px;
+    /* height: auto; */
 }
 
 .core-traits {
-    flex-basis: 250px;
-    height: auto;
+    display: flex;
+    flex: 3 3 300px;
+
 }
 
 .quirks {
-    flex-basis: 250px;
-    height: auto;
+   display: flex;
+    flex: 3 3 300px;
 }
 
 .c2r2 {
@@ -134,12 +147,14 @@ body {
 }
 
 .traits {
-    flex-basis: 400px;
+    display: flex;
+    flex: 7 7 400px;
     height: 800px;
 }
 
 .advanced-moves {
-    flex-basis: 400px;
+    display: flex;
+    flex: 7 7 400px;
     height: 800px;
 }
 
