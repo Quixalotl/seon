@@ -7,54 +7,151 @@ body {
 .card {
     background-color: beige;
     color: black;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 8px;
+    border-radius: 8px;
+    flex-grow: 1;
+    flex-shrink: 1
 }
 
 .column-1 {
-    display: flex;
-    flex-basis: 400px;
+    display: 4 4 300px;
+    flex-direction: column;
+    flex-grow: 4;
+    margin-right: 15px;
+}
+
+.c1r1 {
+    display: flex
+}
+
+.c1r2 {
+    display: flex 4 4 300px;
+    justify-content: center;
+    background: blueviolet;
+    padding: 20px;
     flex-direction: column;
 }
 
+.c1r2s1 {
+    display: flex;
+    background: red;
+}
+
+.c1r2s2 {
+    display: flex;
+    flex-direction: column;
+    background: green
+}
+.c1r3 {
+    display: flex 
+}
+
 .core {
-    width: 300px;
+    display: flex 4 4 300px;
     height: 150px;
 }
 
 .basic-moves {
-    width: 200px;
-    height: 500px;
+    display: flex 4 4 200px;
+    height: auto;
 }
 
 .resources {
-    width: 100px;
+    display: flex 4 4 100px;
     height: 120px;
 }
 
 .pain {
-    width: 100px;
+    display: flex 4 4 100px;
     height: 50px;
 }
 
 .resistances {
-    width: 100px;
+    display: flex 4 4 100px; 
     height: 200px;
 }
 
 .knowledge {
-    width: 100px;
+    display: flex 4 4 100px; 
     height: 200px;
 }
 
+.equipment {
+    display: flex 4 4 300px;
+    height: 500px;
+}
+
 .column-2 {
+    display: flex 7 7 800px;
+    flex-direction: column;
+    flex-grow: 7;
+}
+
+.c2r1 {
     display: flex;
-    flex-basis: 800px;
+    justify-content: center;
+}
+
+.c2r1s1 {
+    display: flex;
     flex-direction: column;
 }
 
-.column-3 {
+.c2r1s1split {
     display: flex;
+    height: 600px
+}
+
+.stats {
+    width: 500px;
+    height: 150px;
+}
+
+.kit {
     flex-basis: 300px;
+    height: auto;
+}
+
+.core-traits {
+    flex-basis: 250px;
+    height: auto;
+}
+
+.quirks {
+    flex-basis: 250px;
+    height: auto;
+}
+
+.c2r2 {
+    display: flex;
+}
+
+.c2r3 {
+    display: flex;
+}
+
+.traits {
+    flex-basis: 400px;
+    height: 800px;
+}
+
+.advanced-moves {
+    flex-basis: 400px;
+    height: 800px;
+}
+
+.column-3 {
+    display: flex 2 2 200px;
     flex-direction: column;
+    flex-grow: 2;
+    margin-left: 15px;
+}
+
+.reminders {
+    height: 1200px;
 }
 
 
