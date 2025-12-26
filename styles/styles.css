@@ -6,24 +6,33 @@ body {
     flex-wrap: wrap;
 }
 
+
+.title {
+    font-weight: 900;
+    padding: 0px 8px;
+    margin-right: 5px;
+    font-style: italic;
+}
+
 .card {
     background-color: beige;
     color: black;
-    font-family: 'McLaren';
+    font-family: 'McLaren', Arial, Helvetica, sans-serif;
+    font-size: 12px;
     display: flex;
     justify-content: center;
-    padding: 10px;
+    padding: 0px;
     margin: 8px;
     border-radius: 8px;
-    border: 5px inset rgb(169, 156, 133);
+    border: 5px outset rgb(169, 156, 133);
 }
 
 .column-1 {
     display: flex;
-    /* flex: 4 4 300px; */
     flex-direction: column;
-    flex-grow: 4;
+    flex-grow: 3;
     margin-right: 15px;
+    width: 190px;
 }
 
 .c1r1 {
@@ -36,13 +45,13 @@ body {
 
 .c1r2s1 {
     display: flex;   
-    flex: 4 4 300px;
+    flex: 3 3 250px;
     
 }
 
 .c1r2s2 {
     display: flex;
-    flex: 4 4 300px;
+    flex: 3 3 250px;
     flex-direction: column;
 }
 .c1r3 {
@@ -51,14 +60,224 @@ body {
 
 .core {
     display: flex;
-    flex: 4 4 300px;
+    flex: 3 3 250px;
     height: 150px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.name-line {
+    display: flex;
+    flex: 1;
+    background: rgb(174, 154, 127);
+    border: 1px outset rgb(199, 177, 148);
+    align-items: center;
+}
+
+.name-line .name {
+    display: flex;
+    flex: 8 8 auto;
+    justify-content: center;
+    font-weight: bolder;
+}
+
+.name-line .level {
+    display: flex;
+    padding: 5px 8px 2px;
+    margin-right: 5px;
+    border-left: 1px solid beige;
+}
+
+.pronouns {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px;
+    margin: 0px;
+    flex: 1;
+}
+
+.pronoun-1, .pronoun-2, .pronoun-3 {
+    display: flex;
+    align-items: center;
+}
+
+.pronoun-2 {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    padding: 0px 10px;
+}
+
+.race {
+    display: flex;
+    flex: 1;
+    background: rgb(230, 230, 198);
+    border: 1px outset rgb(215, 191, 160);
+    align-items: center;
+}
+
+.race .title {
+    display: flex;
+    flex: 1;
+}
+
+.race .data {
+    display: flex;
+    flex: 8 8 auto;
+    justify-content: center;
+}
+
+.class {
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+.class .title {
+    display: flex;
+    flex: 1;
+}
+
+.class .data {
+    display: flex;
+    flex: 8 8 auto;
+    justify-content: center;
+}
+
+.style {
+    display: flex;
+    flex: 1;
+    background: rgb(230, 230, 198);
+    border: 1px outset rgb(215, 191, 160);
+    align-items: center;
+}
+
+.style .title {
+    display: flex;
+    flex: 1;
+}
+
+.style .data {
+    display: flex;
+    flex: 8 8 auto;
+    justify-content: center;
 }
 
 .basic-moves {
     display: flex;
     flex: 4 4 200px;
     height: auto;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.basic-moves .header {
+    display: flex;
+    flex: 1;
+    background: rgb(174, 154, 127);
+    border: 1px outset rgb(199, 177, 148);
+    align-items: center;
+}
+
+.basic-moves .title {
+    display: flex;
+    flex: 8 8 auto;
+    justify-content: center;
+    font-weight: bolder;
+}
+
+/* .basic-moves .data {
+    display: flex;
+    padding: 5px 8px 2px;
+    margin-right: 5px;
+    border-left: 1px solid beige;
+} */
+
+.basic-move-line {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    font-size: 9.5px;
+    justify-content: center;
+}
+
+.basic-move-line.top {
+    background: beige;
+    border-bottom: 1px outset rgb(215, 191, 160);
+    font-size: 8px;
+}
+
+.basic-move-line.even {
+    background: rgb(230, 230, 198);
+    border: 1px outset rgb(215, 191, 160);
+}
+
+.basic-moves .stat {
+    display: flex;
+    flex: 2 2 20px;
+    justify-content: center;
+    min-width: 25px;
+}
+
+.odd .stat, .odd .score, .odd .damage {
+    background: rgb(225, 225, 200);
+}
+.even .stat, .even .score, .even .damage {
+    background: rgb(210, 210, 180);
+}
+
+.odd .stat {
+    border-right: 1px solid rgb(215, 190, 160);
+}
+
+.even .stat {
+    border-right: 1px solid rgb(195, 170, 140);
+}
+
+.odd .score {
+    border-left: 1px solid rgb(215, 190, 160);
+    border-right: 1px solid rgb(215, 190, 160);
+}
+
+.even .score {
+    border-left: 1px solid rgb(195, 170, 140);
+    border-right: 1px solid rgb(195, 170, 140);
+}
+
+.odd .damage {
+    border-left: 1px solid rgb(215, 190, 160);
+}
+
+.even .damage {
+    border-left: 1px solid rgb(195, 170, 140);
+}
+
+.basic-moves .title {
+    display: flex;
+    flex: 12 12 105px;
+    justify-content: center; 
+    margin: 0;
+    padding: 0;
+}
+
+.basic-moves .score {
+    display: flex;
+    flex: 2 2 20px;
+    justify-content: center;
+    min-width: 20px;
+}
+
+.basic-moves .ap {
+    display: flex;
+    flex: 2 2 25px;
+    justify-content: center;
+    min-width: 20px;
+}
+
+.basic-moves .damage {
+    display: flex;
+    flex: 2 2 25px;
+    justify-content: center;
+    min-width: 20px;
 }
 
 .resources {
@@ -87,13 +306,13 @@ body {
 
 .equipment {
     display: flex;
-    flex: 4 4 300px;
+    flex: 3 3 250px;
     height: 500px;
 }
 
 .column-2 {
     display: flex;
-    flex: 7 7 400px;
+    flex: 8 8 400px;
     flex-direction: column;
     flex-grow: 7;
 }
@@ -169,58 +388,3 @@ body {
     height: 1200px;
 }
 
-
- /* <div class="column-1">
-    column-1
-        <div class="c1r1">
-            <div class="core card">
-                core
-            </div>
-        </div>
-        <div class="c1r2">
-            <div class="basic-moves card">
-                basic-moves
-            </div>
-            <div class="resources card">
-                resources
-            </div>
-            <div class="pain card">
-                pain
-            </div>
-            <div class="knowledge card">
-                knowledge
-            </div>
-        </div>
-        <div class="c1r3">
-            <div class="equipment card">
-                equipment
-            </div>
-        </div>
-    </div>
-    <div class="column-2">
-    column-2
-        <div class="stats card">
-            stats
-        </div>
-        <div class="core-traits card">
-            core-traits
-        </div>
-        <div class="quirks card">
-            quirks
-        </div>
-        <div class="kit card">
-            kit
-        </div>
-        <div class="traits card">
-            traits
-        </div>
-        <div class="advanced-moves card">
-            advanced-moves
-        </div>
-    </div>
-    <div class="column-3">
-    column-3
-        <div class="reminders card">
-            reminders
-        </div>
-    </div> */
